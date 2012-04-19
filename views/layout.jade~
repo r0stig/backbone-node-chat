@@ -1,0 +1,7 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/libs/require/require.js', data-main='/javascripts/main')
+  body!= body

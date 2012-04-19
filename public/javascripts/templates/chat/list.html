@@ -1,0 +1,9 @@
+<div id="chatmessages">
+	<% _.each(messages, function(m) { %>
+		<p><%=m.message %>
+	<% }); %>
+</div>
+<div id="write">
+	<input id="write_input" type="text" />
+	<input id="write_button" type="button" value="Skicka!" />
+</div>

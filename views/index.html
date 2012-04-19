@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>I have a back bone</title>
+	
+	<!-- libs -->
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
+	
+	<script type="text/template" id="template_messages">
+		<div id="messages">
+		<% _.each(messages, function(m) { %>
+			<p><%= m.nick %> - <%= m.message %>
+		<% }); %>
+		</div>
+		<div id="write">
+			<input type="text" id="write_input" />
+		</div>
+	</script>
+	<script type="text/template" id="todo_list_template">
+		<b>Task:</b>
+		<input type="text" id="task_add" />
+		<input type="button" value="add" id="task_button" />
+		<ul id="tasks">
+			<% _.each(tasks, function(t) { %>
+				<li><%= t.name %></li>
+			<% }); %>
+		</ul>
+	</script>
+</head>
+<body>
+	<div id="todo-list"></div>
+	<div id="main"></div>
+	<div id="users_online"></div>
+	<div id="messagebox"></div>
+</body>
+</html>
