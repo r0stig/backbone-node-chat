@@ -8,10 +8,11 @@ Running the Chat Application
 Install nodejs from nodejs.org, just follow the instructions.
 
 To download and run the application:
-> $ git clone git@github.com:r0stig/backbone-node-chat.git
-> $ cd backbone-node-chat
-> $ nodejs app.js
-> nodejs app.js
+
+`$ git clone git@github.com:r0stig/backbone-node-chat.git
+$ cd backbone-node-chat
+$ nodejs app.js
+nodejs app.js`
 
 Open your browser and type:
 localhost:3000
