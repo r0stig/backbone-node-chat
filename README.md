@@ -37,4 +37,6 @@ TO-DOs
 =======
 + Include some kind of design
 + Refactor the code
++ Log messages to mongoDB
++ Allow superusers to login (to be able to kick/ban users etc)
 

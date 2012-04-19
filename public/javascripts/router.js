@@ -24,7 +24,8 @@ define([
 	  chatUserOnlineView.setElement( $("#users_online") );
 	  chatListView.setElement( $("#main") );
       chatListView.render();
-	  chatUserOnlineView.render();
+	  
+	  chatUserOnlineView.render()
 	  
 	  socket.start(chatListView, chatUserOnlineView);
     },

@@ -19,6 +19,10 @@ app.configure(function(){
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
+  app.use(require("stylus").middleware({
+        src: __dirname + "/public",
+        compress: true
+    }));
   app.use(express.static(__dirname + '/public'));
 });
 
@@ -39,10 +43,8 @@ app.listen(3000, function(){
 });
 
 /* Everything related to socket.io under */
+/* TO-DO: Refactor this */
 	sio.sockets.on('connection', function (socket) {
-	
-		// Welcome message
-		socket.send('Welcome to da serva, ch00se jår nick plzz!');
 		
 		
 		// Send the list of users conntected
